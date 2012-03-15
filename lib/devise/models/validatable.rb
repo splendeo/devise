@@ -21,7 +21,7 @@ module Devise
           with_options :if => :password_required? do |v|
             v.validates_presence_of     :password
             v.validates_confirmation_of :password
-            v.validates_length_of       :password, :within => 6..20, :allow_blank => true
+            v.validates_length_of       :password, :within => 4..20, :allow_blank => true
           end
         end
       end
